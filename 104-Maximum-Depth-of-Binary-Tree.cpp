@@ -1,6 +1,5 @@
 /*
 104. Maximum Depth of Binary Tree
-
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -18,7 +17,6 @@ Given binary tree [3,9,20,null,null,15,7],
    15   7
 return its depth = 3.
 */
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -28,13 +26,38 @@ return its depth = 3.
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+/*
+APPROACH 2
+not sure if this is faster, but no recursive call made unless root->left exists, so less space used?
+O(n) time, O(n)? space
+*/
+
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-        if (root == nullptr)
+        if(root == nullptr)
             return 0;
-        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
-        
-        
+        int left = 0, right = 0;
+        if(root->left)
+            left = maxDepth(root->left);
+        if(root->right)
+            right = maxDepth(root->right);
+        return max(left, right) + 1;
     }
 };
+
+/*
+APPROACH 1
+simplest looking solution
+O(n) time, O(n)? space
+
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        if(root == nullptr)
+            return 0;
+        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
+    }
+};
+*/
