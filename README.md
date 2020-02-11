@@ -22,7 +22,8 @@
 
 ## [Blind interview problem set](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 
-###Arrays
+### Arrays
+
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [ ] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
@@ -36,7 +37,7 @@
 
 ---
 
-###Binary
+### Binary
 
 - [ ] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
@@ -46,7 +47,7 @@
 
 ---
 
-###Dynamic Programming
+### Dynamic Programming
 
 - [ ] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - [ ] [Coin Change](https://leetcode.com/problems/coin-change/)
@@ -62,7 +63,7 @@
 
 ---
 
-###Graph
+### Graph
 
 - [ ] [Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [ ] [Course Schedule](https://leetcode.com/problems/course-schedule/)
@@ -75,7 +76,7 @@
 
 ---
 
-###Interval
+### Interval
 
 - [ ] [Insert Interval](https://leetcode.com/problems/insert-interval/)
 - [ ] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
@@ -85,7 +86,7 @@
 
 ---
 
-###Linked List
+### Linked List
 
 - [ ] [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
 - [ ] [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
@@ -96,7 +97,7 @@
 
 ---
 
-###Matrix
+### Matrix
 
 - [ ] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
@@ -105,7 +106,7 @@
 
 ---
 
-###String
+### String
 
 - [ ] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
@@ -120,7 +121,7 @@
 
 ---
 
-###Tree
+### Tree
 
 - [ ] [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - [ ] [Same Tree](https://leetcode.com/problems/same-tree/)
@@ -139,7 +140,7 @@
 
 ---
 
-###Heap
+### Heap
 
 - [ ] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 - [ ] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
