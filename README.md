@@ -1,5 +1,25 @@
 # README
 
+## TODO
+
+- [ ] Implement sorting algorithms
+	- [ ] Merge sort
+	- [ ] Quicksort
+	- [ ] Heap sort
+- [ ] Implement a hash table using only arrays
+- [ ] Implement Dijkstra
+- [ ] Implement A*
+- [ ] Implement discrete math algorithms
+- Learn to implement balanced binary trees
+	- [ ] AVL tree
+	- [ ] red/black tree
+	- [ ] splay tree
+- Implement a graph
+	- [ ] Objects and pointers
+	- [ ] Matrix and adjacency list
+- [ ] Implement DFS
+- [ ] Implement BFS
+
 ## [Blind interview problem set](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 
 ###Arrays
