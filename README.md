@@ -19,6 +19,8 @@
 	- [ ] Matrix and adjacency list
 - [ ] Implement DFS
 - [ ] Implement BFS
+- [ ] [Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+- [ ] Take notes on each problem I complete and describe key concepts/takeaways
 
 ## [Blind interview problem set](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 
