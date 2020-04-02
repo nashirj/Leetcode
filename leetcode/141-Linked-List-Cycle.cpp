@@ -6,6 +6,31 @@ Follow up:
 Can you solve it without using extra space?
 */
 
+// revisited, 4/2/2020
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        ListNode *slow, *fast;
+        fast = slow = head;
+        while (slow && fast && fast->next) { // do all three checks here!
+            slow = slow->next;
+            fast = fast->next->next;
+            if (slow == fast) {
+                return true;
+            }
+        }
+        return false;
+    }
+};
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -49,8 +74,6 @@ public:
 };
 
 
-/*
-
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -69,6 +92,3 @@ public:
         
     }
 };
-
-
-*/

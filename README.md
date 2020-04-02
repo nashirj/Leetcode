@@ -2,6 +2,7 @@
 
 ## TODO
 
+- [ ] Watch vid on [Floyd's algorithm](https://www.youtube.com/watch?v=9YTjXqqJEFE&feature=youtu.be)
 - [ ] Implement sorting algorithms
 	- [ ] Merge sort
 	- [ ] Quicksort
