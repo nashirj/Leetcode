@@ -30,6 +30,65 @@ cache.get(4);       // returns 4
 */
 
 
+// slightly better solution using STL
+class LRUCache {
+private:
+    // map<int, DLListNode*> vals;
+    map<int, list<pair<int,int>>::iterator> val_map;
+    list<pair<int,int>> vals;
+    // DLListNode* head;
+    // DLListNode* tail;
+    int capacity;
+    // int num_elements;
+public:
+    LRUCache(int capacity) : capacity(capacity) {
+    }
+    
+    int get(int key) {
+        auto it = this->val_map.find(key);
+        if (it == this->val_map.end()) {
+            return -1;
+        }
+        
+        // move iterator to front of the list
+        vals.splice(vals.begin(), vals, it->second);
+        
+        return it->second->second;
+    }
+    
+    void put(int key, int value) {
+        auto it = this->val_map.find(key);
+        
+        if (it != this->val_map.end()) {
+            // move iterator to front of the list
+            vals.splice(vals.begin(), vals, it->second);
+            it->second->second = value;
+            return;
+        }
+        
+        if (this->capacity == this->val_map.size()) {
+            // delete oldest
+            int key_to_delete = this->vals.back().first;
+            vals.pop_back();
+            val_map.erase(key_to_delete);
+        }
+        
+        // add new
+        vals.emplace_front(pair<int,int>(key, value));
+        val_map[key] = vals.begin();
+    }
+};
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
+
+
+
+// original solution
 struct DLListNode {
     int val;
     int key;
