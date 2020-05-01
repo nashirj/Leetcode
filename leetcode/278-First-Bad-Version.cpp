@@ -23,11 +23,28 @@ bool isBadVersion(int version);
 class Solution {
 public:
     int firstBadVersion(int n) {
+        int lo = 1, mid = 1;
+        while (lo < n) {
+            mid = lo + (n-lo)/2;
+            if (isBadVersion(mid)) {
+                n = mid;
+            } else {
+                lo = mid+1;
+            }
+        }
+        // lo == n, so we have honed in on first bad
+        return lo;
+    }
+};
+
+class Solution {
+public:
+    int firstBadVersion(int n) {
         if(isBadVersion(1))
             return 1;
         int low = 1, high = n, middle;
         while(low <= high){
-            //[middle = (high + low)/2;] can overflow
+            //middle = (high + low)/2;] can overflow
             //low/2 + high/2 != (high + low)/2, e.g. low = 3, high = 5, so instead use:
             middle = low + (high - low)/2;
             
