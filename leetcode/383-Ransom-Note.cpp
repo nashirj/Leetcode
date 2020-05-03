@@ -15,6 +15,23 @@ canConstruct("aa", "aab") -> true
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
+        vector<int>letters(26, 0);
+        for (char c : ransomNote) {
+            letters[c-'a']++;
+        }
+        for (char c : magazine) {
+            letters[c-'a']--;
+        }
+        return std::none_of(letters.begin(), letters.end(), [](int i){
+            return i > 0;
+        });
+    }
+};
+
+
+class Solution {
+public:
+    bool canConstruct(string ransomNote, string magazine) {
         int letters[26] = {0};
         for (char c : magazine) {
             letters[c-'a']++;
