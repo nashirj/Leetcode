@@ -43,6 +43,25 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 */
 
+// solution from 7/19/20
+class Solution {
+public:
+    int romanToInt(string s) {
+        map<char, int> mapping = {{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
+        int n = s.length();
+        int total = 0;
+        // if s[i] < s[i+1], then process both at once, else process one at a time
+        for (int i = 0; i < n; i++) {
+            if (i < n-1 && mapping[s[i]] < mapping[s[i+1]]) {
+                total -= mapping[s[i]];
+                i++;
+            }
+            total += mapping[s[i]];
+        }
+        return total;
+    }
+};
+
 
 // SOLUTION FROM 1/15/2020
 class Solution {
