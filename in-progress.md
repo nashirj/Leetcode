@@ -4,3 +4,4 @@
   - [solution 1](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/777/discuss/26014/Any-shorter-O(1)-space-solution)
   - [solution 2](https://leetcode.com/articles/set-matrix-zeroes/#)
 - [ ] [dominos solution](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/discuss/252633/JavaPython-3-one-pass-counting-O(A-%2B-B)-w-brief-explanation-and-analysis.)
+- [ ] format for [tracking completed problems](https://leetcode.com/discuss/interview-experience/716202/amz-google-facebook-offer-reject-reject-my-journey-from-failure-to-offer-at-faang)
